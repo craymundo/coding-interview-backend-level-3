@@ -34,7 +34,7 @@ export const getItems = async (event: any) => {
 
     return {
       statusCode: 200,
-      body: items,
+      body: JSON.stringify(items),
     };
   } catch (error: any) {
     console.error("Error fetching items:", error);

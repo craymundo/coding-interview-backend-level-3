@@ -1,0 +1,226 @@
+openapi: 3.0.0
+info:
+  title: CRUD API
+  description: API de CRUD con AWS Lambda y Serverless
+  version: 1.0.0
+  contact:
+    email: calvarador17@gmail.com
+servers:
+  - url: https://1v3j9p7zo6.execute-api.us-east-1.amazonaws.com/dev
+
+tags:
+  - name: items
+    description: endpoints para items
+paths:
+  /items:
+    post:
+      tags:
+        - items
+      summary: Crea un nuevo item
+      description: Este endpoint permite crear un nuevo item en la base de datos.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ItemRequest"
+      responses:
+        "201":
+          description: Item creado correctamente
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ItemResponse"
+        "400":
+          description: Error en la validación del request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+    get:
+      tags:
+        - items
+      summary: Obtiene la lista de items
+      description: Devuelve todos los items almacenados en la base de datos o en cache.
+      responses:
+        "200":
+          description: Lista de items
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ItemsListResponse"
+        "500":
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /items/{id}:
+    get:
+      tags:
+        - items
+      summary: Obtiene un item por ID
+      description: Permite obtener los detalles de un item específico.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Detalles del item
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ItemResponse"
+        "404":
+          description: Item no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+    put:
+      tags:
+        - items
+      summary: Actualiza un item existente
+      description: Actualiza los datos de un item específico.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ItemRequest"
+      responses:
+        "200":
+          description: Item actualizado correctamente
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ItemResponse"
+        "404":
+          description: Item no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "400":
+          description: Error en la validación del request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+    delete:
+      tags:
+        - items
+      summary: Elimina un item por ID
+      description: Permite eliminar un item específico de la base de datos.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: Item eliminado exitosamente
+        "404":
+          description: Item no encontrado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+components:
+  schemas:
+    ItemRequest:
+      type: object
+      required:
+        - name
+        - price
+      properties:
+        name:
+          type: string
+          description: Nombre del item
+        price:
+          type: number
+          description: Precio del item
+
+    ItemResponse:
+      type: object
+      properties:
+        id:
+          type: number
+          description: ID del item
+        name:
+          type: string
+          description: Nombre del item
+        price:
+          type: number
+          description: Precio del item
+
+    ErrorResponse:
+      type: object
+      properties:
+        errors:
+          type: array
+          description: Lista de errores de validación
+          items:
+            type: object
+            properties:
+              field:
+                type: string
+                description: Nombre del campo con error
+              message:
+                type: string
+                description: Mensaje de error
+
+    ItemsListResponse:
+      type: array
+      items:
+        type: object
+        properties:
+          id:
+            type: number
+            description: ID del item
+          name:
+            type: string
+            description: Nombre del item
+          price:
+            type: number
+            description: Precio del item
+      description: Lista de items almacenados

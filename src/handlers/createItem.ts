@@ -11,7 +11,7 @@ import { setCache } from "../services/cacheService";
  */
 export const createItem = async (event: any) => {
   try {
-
+    
     await authorize(event);
 
     const { name, price } = JSON.parse(event.body);
@@ -29,13 +29,13 @@ export const createItem = async (event: any) => {
     }
 
     const db = await connectDB();
-
+    
     const item = new Item();
     item.name = name;
     item.price = price;
 
     const savedItem = await db.getRepository(Item).save(item);
-
+    
     const createdItem = {
       id: savedItem.id,
       name: savedItem.name,
@@ -46,8 +46,10 @@ export const createItem = async (event: any) => {
 
     return {
       statusCode: 201,
-      body: createdItem,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(createdItem),
     };
+
   } catch (error) {
     console.error("Error creating item:", error);
 

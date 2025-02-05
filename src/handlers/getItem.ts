@@ -59,7 +59,7 @@ export const getItem = async (event: any) => {
 
     return {
       statusCode: 200,
-      body: itemData,
+      body: JSON.stringify(itemData),
     };
   } catch (error: any) {
     console.error("Error fetching item:", error);

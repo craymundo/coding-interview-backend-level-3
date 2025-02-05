@@ -18,7 +18,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJraWQiOiJYd3VcL0l3UWZkbllPbFRRV3FFUTlWV3haOGdDRVdTYisrRkZPbXZCNkFkQT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYWxsXC9hbGwiLCJhdXRoX3RpbWUiOjE3MzgyODc0MzMsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX2tHRGx3NGxvViIsImV4cCI6MTczODI5MTAzMywiaWF0IjoxNzM4Mjg3NDMzLCJ2ZXJzaW9uIjoyLCJqdGkiOiIzMDE3Mzg0ZC00N2IwLTQwNDgtYjUyNy1mNjQxNmQxZjkxZjgiLCJjbGllbnRfaWQiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCJ9.dx9WqnNHWj8GekZQnFstwaI1xSu_CF8kgzYKmDNKwCbRzM3tiAp6oN9hlojDvdv2uI8FYTmb0cKR3DFuRLLgCewulOMjJuEsNHmSQ-Ebq-2LGFWscudqQjrL24CETiSPpmuYwr3Va4998In0DfDoRBAeDUkGWxuUkuAvs7H0dOTee_BjZzJ1o6aPPrtqXC_QakTEWEq2hzWQAOSCLtjbrsKEwnnd0pQLdZSW_OJXZ9MRkyXmy3ojZCx2d7O3cQOYn3oTb7u2xJSsawL9o1Ujr6qixdeoR6l-FYu0oESWMW3vblsoJAKTjTM0xQ8DH0l-hyjKg5APGigRQnyzw38R2g",
+									"value": "eyJraWQiOiJYd3VcL0l3UWZkbllPbFRRV3FFUTlWV3haOGdDRVdTYisrRkZPbXZCNkFkQT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYWxsXC9hbGwiLCJhdXRoX3RpbWUiOjE3Mzg3MzAxMDUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX2tHRGx3NGxvViIsImV4cCI6MTczODczMzcwNSwiaWF0IjoxNzM4NzMwMTA1LCJ2ZXJzaW9uIjoyLCJqdGkiOiI0ZjlkZmIxNi05NjM0LTQ4NDYtODlkNS0xMTA1ODViMDcwNGQiLCJjbGllbnRfaWQiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCJ9.XM6JmJnG_BAg0vXHm6v0YtsLvtErBCDcV1Y1jftwE_hGKt1HXZJTaakDD6ugJBGBzdMwRujxjt7XOchwrpYOx_HeeuFOzEx2diJmRGL_NYAe8UVAJz47bW0NvccpDBRCilax6OzLrB5T6gQqiWGZ6haks-KBiITSjnYWlJC-w27dMoiOhjOwwSJVHuxilGriKZQwggYWGwFiPrXivmu4C9klBwHSJlGDQGBfzhJKuFUzYYP53JhsJRNQf9VQsxL77YJbFLwtGn9S3aZZiDkA_v06vdxrzctzZjM__e_lBHQhKy4_BlF0qPgsrVappABAxPYy9IJFVzMZhHlno62TOg",
 									"type": "string"
 								}
 							]
@@ -85,7 +85,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJraWQiOiJYd3VcL0l3UWZkbllPbFRRV3FFUTlWV3haOGdDRVdTYisrRkZPbXZCNkFkQT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYWxsXC9hbGwiLCJhdXRoX3RpbWUiOjE3MzgyNzMyNjEsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX2tHRGx3NGxvViIsImV4cCI6MTczODI3Njg2MSwiaWF0IjoxNzM4MjczMjYxLCJ2ZXJzaW9uIjoyLCJqdGkiOiIwYzc1MjgzYy00OGI2LTQ2OGEtYjZiMi05ZWUxY2FkMzgyYTgiLCJjbGllbnRfaWQiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCJ9.FMDm2Z1bp6e0qiuXlTZDcvEVWzPsTnEQqyablCxnFbwd3Zv8xyhzB50oTdSwlhAtbzk6ngl88tfYC20WLbmXMMpDp8FLvtXq0Frhxadr0qU0rzhNOawnoBumNaSOXLx80KLFLWBGfmuoZ-2dGA3LdFwCrTUI19ViMS2vRKVdNUGyNVGhctBWwL-0cOTx9kL-uwi1Y18p1STpy6X0uZLHPRI2GFrriVNNSHsJsLk1hyHiOOfLbxdKtkcnO9uYF5jR2cnui_Rpp_fb9hzRR6zt43aPgW1NnHu6bvpXICP5mPWYnxuYwxbZ1g6a_4DikX9BnxO9p0Vn_5XJLQw_aYaIwQ",
+									"value": "werweryJraWQiOiJYd3VcL0l3UWZkbllPbFRRV3FFUTlWV3haOGdDRVdTYisrRkZPbXZCNkFkQT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYWxsXC9hbGwiLCJhdXRoX3RpbWUiOjE3Mzg3MzAxMDUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX2tHRGx3NGxvViIsImV4cCI6MTczODczMzcwNSwiaWF0IjoxNzM4NzMwMTA1LCJ2ZXJzaW9uIjoyLCJqdGkiOiI0ZjlkZmIxNi05NjM0LTQ4NDYtODlkNS0xMTA1ODViMDcwNGQiLCJjbGllbnRfaWQiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCJ9.XM6JmJnG_BAg0vXHm6v0YtsLvtErBCDcV1Y1jftwE_hGKt1HXZJTaakDD6ugJBGBzdMwRujxjt7XOchwrpYOx_HeeuFOzEx2diJmRGL_NYAe8UVAJz47bW0NvccpDBRCilax6OzLrB5T6gQqiWGZ6haks-KBiITSjnYWlJC-w27dMoiOhjOwwSJVHuxilGriKZQwggYWGwFiPrXivmu4C9klBwHSJlGDQGBfzhJKuFUzYYP53JhsJRNQf9VQsxL77YJbFLwtGn9S3aZZiDkA_v06vdxrzctzZjM__e_lBHQhKy4_BlF0qPgsrVappABAxPYy9IJFVzMZhHlno62TOg",
 									"type": "string"
 								}
 							]
@@ -102,7 +102,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://1v3j9p7zo6.execute-api.us-east-1.amazonaws.com/dev/items",
+							"raw": "https://1v3j9p7zo6.execute-api.us-east-1.amazonaws.com/dev/items/3",
 							"protocol": "https",
 							"host": [
 								"1v3j9p7zo6",
@@ -113,7 +113,8 @@
 							],
 							"path": [
 								"dev",
-								"items"
+								"items",
+								"3"
 							]
 						}
 					},
@@ -127,7 +128,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJraWQiOiJYd3VcL0l3UWZkbllPbFRRV3FFUTlWV3haOGdDRVdTYisrRkZPbXZCNkFkQT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYWxsXC9hbGwiLCJhdXRoX3RpbWUiOjE3MzgyNzMyNjEsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX2tHRGx3NGxvViIsImV4cCI6MTczODI3Njg2MSwiaWF0IjoxNzM4MjczMjYxLCJ2ZXJzaW9uIjoyLCJqdGkiOiIwYzc1MjgzYy00OGI2LTQ2OGEtYjZiMi05ZWUxY2FkMzgyYTgiLCJjbGllbnRfaWQiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCJ9.FMDm2Z1bp6e0qiuXlTZDcvEVWzPsTnEQqyablCxnFbwd3Zv8xyhzB50oTdSwlhAtbzk6ngl88tfYC20WLbmXMMpDp8FLvtXq0Frhxadr0qU0rzhNOawnoBumNaSOXLx80KLFLWBGfmuoZ-2dGA3LdFwCrTUI19ViMS2vRKVdNUGyNVGhctBWwL-0cOTx9kL-uwi1Y18p1STpy6X0uZLHPRI2GFrriVNNSHsJsLk1hyHiOOfLbxdKtkcnO9uYF5jR2cnui_Rpp_fb9hzRR6zt43aPgW1NnHu6bvpXICP5mPWYnxuYwxbZ1g6a_4DikX9BnxO9p0Vn_5XJLQw_aYaIwQ",
+									"value": "eyJraWQiOiJYd3VcL0l3UWZkbllPbFRRV3FFUTlWV3haOGdDRVdTYisrRkZPbXZCNkFkQT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYWxsXC9hbGwiLCJhdXRoX3RpbWUiOjE3Mzg3MzAzODksImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX2tHRGx3NGxvViIsImV4cCI6MTczODczMzk4OSwiaWF0IjoxNzM4NzMwMzg5LCJ2ZXJzaW9uIjoyLCJqdGkiOiIzZmI5ZjAxYy1lOTRjLTRjNGMtOWVmMy02NWJlM2E4Mzg5ZjQiLCJjbGllbnRfaWQiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCJ9.wqCjIIYlsq9KP3dJMBjN3vbw_WTw4bY4QsULCuLwCyj6IJ_DB9nLXepJavqKF_JTYKpWQotENAQXDuleNeLWY6m6YozKp_zngPbBpZtih4xg5CTWPT8oo5Y7A4MaVJY18dX9jwUeNYGv806Wa-aXrcT0dQu0OtP-WEk-EU2YlJDtTN--VxbJnYCGM16f6nwPf2-_bE4NTdh1-kA-cxe5XLX0Npz5x9NOOkiwjmDoOFzoIXxjC2B65vv8dCfVgig89qJn8SP-gbBZd3BYeQAMqo5fklka4JGbUu96axCVlEP63VmcwSRJ5OZnlMlSgjWh336dU27NwEFMpXvSsIEarQ",
 									"type": "string"
 								}
 							]
@@ -169,7 +170,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJraWQiOiJYd3VcL0l3UWZkbllPbFRRV3FFUTlWV3haOGdDRVdTYisrRkZPbXZCNkFkQT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYWxsXC9hbGwiLCJhdXRoX3RpbWUiOjE3MzgyNzMyNjEsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX2tHRGx3NGxvViIsImV4cCI6MTczODI3Njg2MSwiaWF0IjoxNzM4MjczMjYxLCJ2ZXJzaW9uIjoyLCJqdGkiOiIwYzc1MjgzYy00OGI2LTQ2OGEtYjZiMi05ZWUxY2FkMzgyYTgiLCJjbGllbnRfaWQiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCJ9.FMDm2Z1bp6e0qiuXlTZDcvEVWzPsTnEQqyablCxnFbwd3Zv8xyhzB50oTdSwlhAtbzk6ngl88tfYC20WLbmXMMpDp8FLvtXq0Frhxadr0qU0rzhNOawnoBumNaSOXLx80KLFLWBGfmuoZ-2dGA3LdFwCrTUI19ViMS2vRKVdNUGyNVGhctBWwL-0cOTx9kL-uwi1Y18p1STpy6X0uZLHPRI2GFrriVNNSHsJsLk1hyHiOOfLbxdKtkcnO9uYF5jR2cnui_Rpp_fb9hzRR6zt43aPgW1NnHu6bvpXICP5mPWYnxuYwxbZ1g6a_4DikX9BnxO9p0Vn_5XJLQw_aYaIwQ",
+									"value": "eyJraWQiOiJYd3VcL0l3UWZkbllPbFRRV3FFUTlWV3haOGdDRVdTYisrRkZPbXZCNkFkQT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYWxsXC9hbGwiLCJhdXRoX3RpbWUiOjE3Mzg3MzIzOTMsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX2tHRGx3NGxvViIsImV4cCI6MTczODczNTk5MywiaWF0IjoxNzM4NzMyMzkzLCJ2ZXJzaW9uIjoyLCJqdGkiOiI0NzZjNzQ2OC1kNDg3LTQ1NGMtOTZiOC00NGIyYjhiYmRlMTYiLCJjbGllbnRfaWQiOiIxNXU1bjVrN3JpbGI3OWtpaXAyaTIyaGk4bCJ9.TJI3X0XVhiWCOAFCpZxzW1Z3tRINQ73Mx1TpZfzb18swSFzM0ItUVk_NdJ-oT_kWFaMicdXcsBaegGIVmNmHsd3Ru0Mp3blCfWhTOsmb17FR1Yz8u_sAqKgwbJw-A8X6MdI7RfHu2xmTI59mxxwbhzsGaRxmph2Xk7-q9UAC4n--D4KdQJWGzNoaslruo3l-izeSCMnZ1lq7-dNOyq4GkOljHsLcSaEJ96VFs-bZoVvxbavj9lzJIrp8783uP__G2leUCaI8FUiIWEHtU0Nv69n3LWyGb_ZpkMiWIHvH6psZ17ZIVXZdqdk4R5gsaOZfCawuzcKQagk1wVshhSarvg",
 									"type": "string"
 								}
 							]
@@ -178,7 +179,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 3,\r\n    \"name\": \"test nuevo mod\",\r\n    \"price\": 20\r\n}",
+							"raw": "{\r\n    \"name\": \"test nuevo mod\",\r\n    \"price\": 30\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -186,7 +187,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://1v3j9p7zo6.execute-api.us-east-1.amazonaws.com/dev/items",
+							"raw": "https://1v3j9p7zo6.execute-api.us-east-1.amazonaws.com/dev/items/3",
 							"protocol": "https",
 							"host": [
 								"1v3j9p7zo6",
@@ -197,7 +198,34 @@
 							],
 							"path": [
 								"dev",
-								"items"
+								"items",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PING",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://1v3j9p7zo6.execute-api.us-east-1.amazonaws.com/dev/ping",
+							"protocol": "https",
+							"host": [
+								"1v3j9p7zo6",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"ping"
 							]
 						}
 					},

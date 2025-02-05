@@ -1,5 +1,8 @@
 service: crud-v8
 
+custom:
+  documentation: ${file(serverless.doc.yml):documentation}
+
 provider:
   name: aws
   runtime: nodejs20.x
@@ -26,6 +29,9 @@ provider:
     subnetIds:
       - !Ref PrivateSubnet1
       - !Ref PrivateSubnet2
+
+plugins:
+  - serverless-openapi-documentation
 
 functions:
   ping:
@@ -83,6 +89,7 @@ functions:
       - http:
           path: items/{id}
           method: get
+
 resources:
   Resources:
     # VPC
@@ -317,3 +324,5 @@ resources:
           - !Ref PublicSubnet1
           - !Ref PublicSubnet2
         DBSubnetGroupName: "DBSubnetGroup-crud-v8"
+
+

@@ -1,0 +1,258 @@
+documentation:
+  title: "CRUD API"
+  description: "API de CRUD con AWS Lambda y Serverless"
+  version: "1.0.0"
+
+  models:
+    - name: "ItemRequest"
+      contentType: "application/json"
+      schema:
+        type: "object"
+        required:
+          - name
+          - price
+        properties:
+          name:
+            type: "string"
+            description: "Nombre del item"
+          price:
+            type: "number"
+            description: "Precio del item"
+    - name: "ItemResponse"
+      contentType: "application/json"
+      schema:
+        type: "object"
+        properties:
+          id:
+            type: "number"
+            description: "ID del item"
+          name:
+            type: "string"
+            description: "Nombre del item"
+          price:
+            type: "number"
+            description: "Precio del item"
+    - name: "ErrorResponse"
+      contentType: "application/json"
+      schema:
+        type: "object"
+        properties:
+          errors:
+            type: "array"
+            description: "Lista de errores de validación"
+            items:
+              type: "object"
+              properties:
+                field:
+                  type: "string"
+                  description: "Nombre del campo con error"
+                message:
+                  type: "string"
+                  description: "Mensaje de error"  
+    - name: "ItemsListResponse"
+      contentType: "application/json"
+      schema:
+        type: "array"
+        items:
+          type: "object"
+          properties:
+            id:
+              type: "number"
+              description: "ID del item"
+            name:
+              type: "string"
+              description: "Nombre del item"
+            price:
+              type: "number"
+              description: "Precio del item"
+        description: "Lista de items almacenados"
+
+endpoints:
+  createItem:
+    summary: "Crea un nuevo item"
+    description: "Este endpoint permite crear un nuevo item en la base de datos."
+    requestBody:
+      description: "Objeto de información del item"
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ItemRequest"
+    requestModels:
+      application/json: "ItemRequest"
+    requestHeaders:
+      - name: "Content-Type"
+        description: "Content Type header"
+        schema:
+          type: "string"
+      - name: "Authorization"
+        description: "Authorization"
+        schema:
+          type: "string"
+    methodResponses:
+      - statusCode: 201
+        responseBody:
+          description: "Item creado correctamente"
+        responseModels:
+          application/json: "ItemResponse"
+      - statusCode: 401
+        responseBody:
+          description: "Unauthorized: No token provided"
+        responseModels:
+          application/json: "ErrorResponse"
+      - statusCode: 400
+        responseBody:
+          description: "Error en la validación del request"
+        responseModels:
+          application/json: "ErrorResponse"
+      - statusCode: 500
+        responseBody:
+          description: "Error interno del servidor"
+        responseModels:
+          application/json: "ErrorResponse"
+  
+  updateItem:
+    summary: "Actualiza un item existente"
+    description: "Este endpoint actualiza los datos de un item específico."
+    requestBody:
+      description: "Objeto con los datos a actualizar"
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ItemRequest"
+    requestModels:
+      application/json: "ItemRequest"
+    requestHeaders:
+      - name: "Content-Type"
+        description: "Content Type header"
+        schema:
+          type: "string"
+      - name: "Authorization"
+        description: "Authorization"
+        schema:
+          type: "string"
+    pathParams:
+      - name: "id"
+        description: "ID del item a actualizar"
+        schema:
+          type: "integer"
+    methodResponses:
+      - statusCode: 200
+        responseBody:
+          description: "Item actualizado correctamente"
+        responseModels:
+          application/json: "ItemResponse"
+      - statusCode: 401
+        responseBody:
+          description: "Unauthorized: No token provided"
+        responseModels:
+          application/json: "ErrorResponse"
+      - statusCode: 404
+        responseBody:
+          description: "Item no encontrado"
+        responseModels:
+          application/json: "ErrorResponse"
+      - statusCode: 400
+        responseBody:
+          description: "Error en la validación del request"
+        responseModels:
+          application/json: "ErrorResponse"
+      - statusCode: 500
+        responseBody:
+          description: "Error interno del servidor"
+        responseModels:
+          application/json: "ErrorResponse"
+
+  getItem:
+    summary: "Obtiene un item por ID"
+    description: "Este endpoint permite obtener los detalles de un item específico."
+    pathParams:
+      - name: "id"
+        description: "ID del item a consultar"
+        schema:
+          type: "integer"
+    requestHeaders:
+      - name: "Authorization"
+        description: "Authorization"
+        schema:
+          type: "string"
+    methodResponses:
+      - statusCode: 200
+        responseBody:
+          description: "Detalles del item"
+        responseModels:
+          application/json: "ItemResponse"
+      - statusCode: 401
+        responseBody:
+          description: "Unauthorized: No token provided"
+        responseModels:
+          application/json: "ErrorResponse"
+      - statusCode: 404
+        responseBody:
+          description: "Item no encontrado"
+        responseModels:
+          application/json: "ErrorResponse"
+      - statusCode: 500
+        responseBody:
+          description: "Error interno del servidor"
+        responseModels:
+          application/json: "ErrorResponse"
+
+  getItems:
+    summary: "Obtiene la lista de items"
+    description: "Este endpoint devuelve todos los items almacenados en la base de datos o en cache."
+    requestHeaders:
+      - name: "Authorization"
+        description: "Authorization"
+        schema:
+          type: "string"
+    methodResponses:
+      - statusCode: 200
+        responseBody:
+          description: "Lista de items"
+        responseModels:
+          application/json: "ItemsListResponse"
+      - statusCode: 401
+        responseBody:
+          description: "Unauthorized: No token provided"
+        responseModels:
+          application/json: "ErrorResponse"
+      - statusCode: 500
+        responseBody:
+          description: "Error interno del servidor"
+        responseModels:
+          application/json: "ErrorResponse"
+
+  deleteItem:
+    summary: "Elimina un item por ID"
+    description: "Este endpoint permite eliminar un item específico de la base de datos."
+    pathParams:
+      - name: "id"
+        description: "ID del item a eliminar"
+        schema:
+          type: "integer"
+    requestHeaders:
+      - name: "Authorization"
+        description: "Authorization"
+        schema:
+          type: "string"
+    methodResponses:
+      - statusCode: 204
+        responseBody:
+          description: "Item eliminado exitosamente"
+      - statusCode: 401
+        responseBody:
+          description: "Unauthorized: No token provided"
+        responseModels:
+          application/json: "ErrorResponse"
+      - statusCode: 404
+        responseBody:
+          description: "Item no encontrado"
+        responseModels:
+          application/json: "ErrorResponse"
+      - statusCode: 500
+        responseBody:
+          description: "Error interno del servidor"
+        responseModels:
+          application/json: "ErrorResponse"
